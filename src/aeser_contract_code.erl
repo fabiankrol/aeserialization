@@ -23,7 +23,7 @@ serialize(CodeMap = #{ byte_code := ByteCode
     SourceHash = case CodeMap of
                      #{ source_hash := SHash } -> SHash;
                      #{ contract_source := SrcStr } ->
-                         enacl:generichash(32, list_to_binary(SrcStr))
+                          <<>>
                  end,
 
     %% Compiler version
